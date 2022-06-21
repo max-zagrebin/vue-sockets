@@ -8,7 +8,7 @@
   <button @click="setUpSocket(displayMessage)">Установить соединение</button>
   <button @click="closeSocket" v-if="isConnectionOpened">Закрыть соединение</button>
   <p>{{ currentStatusText }}</p>
-  <div  v-show="isConnectionOpened">
+  <div v-show="isConnectionOpened">
     <form action="#" @submit="handleSubmit">
       <input type="text" id="chat-msg"/>
       <input type="submit" value="Отправить"/>
@@ -17,10 +17,7 @@
     <div id="container">
     </div>
   </div>
-
-
 </template>
-
 <script>
 export default {
   name: "SocketConnection",
@@ -39,8 +36,6 @@ export default {
     }
   },
   mounted() {
-
-    // this.setUpSocket(this.displayMessage);
   },
   methods: {
     closeSocket() {
