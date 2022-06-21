@@ -1,14 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <img alt="Vue logo" src="./assets/logo.png">-->
+<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <socket-connection></socket-connection>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import SocketConnection from "@/components/SocketConnection";
 export default {
   name: 'App',
   components: {
+    SocketConnection,
     HelloWorld
   }
 }
