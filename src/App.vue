@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import SocketConnection from "@/components/SocketConnection";
 export default {
   name: 'App',
   components: {
     SocketConnection,
-    HelloWorld
   }
 }
 </script>
